@@ -7,7 +7,6 @@ let elementToBeUpdated;
 
 createButtonRef.addEventListener('click', function () {
     const value = todoInputRef.value;
-    console.log(value);
     const li = document.createElement('li');
     const buttonsDiv = document.createElement('div');
     const TextParaTag = document.createElement('p');
