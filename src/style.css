@@ -86,10 +86,12 @@ h1 {
         background 0.2s,
         transform 0.15s;
 }
-#todoContainer li p{
+
+#todoContainer li p {
     padding: 18px 14px;
     width: 100%;
 }
+
 #todoContainer li button {
     color: white;
     font-size: 15px;
@@ -98,34 +100,69 @@ h1 {
     font-weight: 600;
     border-radius: 5px;
 }
+
 #todoContainer li div {
     display: flex;
     gap: 5px;
     padding-right: 10px;
 }
 
-li{
+li {
     user-select: none;
 }
 
-#todoContainer li #updateButton {
+#todoContainer li .updateButton {
     z-index: 10000000;
     background-color: #4565f3;
     border: 2px solid #2c41a1;
 }
-#todoContainer li #deleteButton {
+
+#todoContainer li .deleteButton {
     background-color: #ed6a6a;
     border: 2px solid #ff0000;
 }
 
-#todoContainer li #updateButton:hover {
+#todoContainer li .updateButton:hover {
     background-color: #3a56d4;
 }
-#todoContainer li #deleteButton:hover {
+
+#todoContainer li .deleteButton:hover {
     background-color: #ff0000;
 }
 
 #todoContainer li:hover {
     background: #fee2e2;
     transform: translateX(4px);
+}
+
+#todoContainer li #checkbox {
+    height: 2000px;
+    width: 2000px;
+}
+
+li .valueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li .false {
+    margin-left: 10px;
+    height: min-content;
+    width: min-content;
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+
+li .true {
+    margin-left: 10px;
+    height: min-content;
+    width: min-content;
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: 2px solid #27bc27;
+    background: url("../public/tick-svgrepo-com.svg");
+    background-size: cover;
+    background-color: white;
 }
